@@ -1,6 +1,12 @@
+body{
+    background-color: rgb(31, 41, 140);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 7px 7px 0px 7px;
+}  
 .mainContainer{
     display: flex;
     justify-content: center;
+    gap: 4px;
 }
 *{
     box-sizing:border-box;
@@ -14,66 +20,115 @@
     border: 5px solid black;
     gap: 10px;
     border-radius: 35px;
+    padding: 30px;
 }
 .rightContainer{
     display: flex;
     flex-direction: column;
-    background-color: aquamarine;
+    gap: 8px;
     text-align: center;
 }
 .taskAddition{
     background-color: bisque;
     width: 450px;
-    height: 355px;
+    height: 180px;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     text-align: center;
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 35px;
+    padding: 7px;
 }
 .panel{
     display: flex;
+    align-items: center;
     gap: 2px;
     justify-content: space-around;
 }
 .taskCount{
     background-color: blueviolet;
-    height: 355px;
+    min-height: 530px;
     text-align: center;
     display: flex;
     flex-direction: column;
     gap: 5px;
     text-align: center;
     border: 5px solid black;
-    border-radius: 15px;
+    border-radius: 35px;
+    padding: 10px;
 }
 .show{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 10px;
 }
 .innerShow{
     display: grid;
     grid-template-columns: 1fr auto auto;
     text-align: left;
+    align-items: center;
+    font-size: 17px;
+    gap: 20px;
+    padding: 0 30px;
 }
-.content{
-    margin-left: 80px;
+.innerShow2{
+    display: grid;
+    grid-template-columns: 1fr 140px auto;
+    text-align: left;
+    align-items: center;
+    gap: 20px;
+    padding: 0 30px;
 }
-.dueDate{
-    margin-right: 120px;
-}
-.deleteButton{
-    margin-right: 30px;
+
+button{
+    height: 29px;
+    width: 70px;
+    border-radius: 12px;
 }
 .taskDone{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
-.content2{
-    margin-left: 50px;
+
+.listTitle{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
-.dueDate2{
-    margin-right: 40px;
+.subtitles{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input{
+    height: 29px;
+    border-radius: 12px;
+    padding: 5px;
+    text-align: center;
+}
+.content{
+    margin-left: 60px;
+}
+.dueDate{
+    margin-right: 150px;
+}
+.subtext{
+    margin-top: 20px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    word-spacing: 4px;
+    text-align: left;
+    
+}
+hr{
+    border:none;
+    border-width: 2px;
+    width: 100%;
+    border-top: 2px solid black;
+    background-color: black;
+    margin-bottom: 20px;
 }
