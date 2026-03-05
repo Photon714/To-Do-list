@@ -23,7 +23,7 @@
 }
 .taskAddition{
     background-color: bisque;
-    width: 400px;
+    width: 450px;
     height: 355px;
     display: flex;
     flex-direction: column;
@@ -47,4 +47,33 @@
     text-align: center;
     border: 5px solid black;
     border-radius: 15px;
+}
+.show{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.innerShow{
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    text-align: left;
+}
+.content{
+    margin-left: 80px;
+}
+.dueDate{
+    margin-right: 120px;
+}
+.deleteButton{
+    margin-right: 30px;
+}
+.taskDone{
+    display: flex;
+    flex-direction: column;
+}
+.content2{
+    margin-left: 50px;
+}
+.dueDate2{
+    margin-right: 40px;
 }

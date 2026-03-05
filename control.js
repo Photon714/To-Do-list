@@ -1,0 +1,32 @@
+let arr =[];
+function add(){
+    let storage='';
+    for(let i=0;i<arr.length;i++){
+        const item=arr[i];
+        let eachline = `<div class="innerShow"><div class="content">${item.data}</div><div class="dueDate">${item.date}</div><div><button class="deleteButton" onclick="
+            copy(arr[${i}]);
+            arr.splice(${i},1);
+            add();
+            ">Delete</button></div></div>`;
+        storage += eachline;
+    }
+    document.querySelector('.show').innerHTML=storage;
+}
+function takeinput(){
+    let dataElement=document.querySelector('.input1');
+    let data=dataElement.value;
+    let dateElement=document.querySelector('.inputdate');
+    let date=dateElement.value;
+    arr.push({
+        data,
+        date
+    });
+    dataElement.value='';
+    add();
+}
+let deletedTask='';
+function copy(arrcopy){
+    deletedTask=`<div class="innerShow"><div class="content2">${arrcopy.data}</div><div class="dueDate2">${arrcopy.date}</div></div>`
+    document.querySelector('.taskDone').innerHTML+=deletedTask;
+    return;
+}
