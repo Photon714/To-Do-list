@@ -1,0 +1,50 @@
+.mainContainer{
+    display: flex;
+    justify-content: center;
+}
+*{
+    box-sizing:border-box;
+}
+.leftContainer{
+    background-color: aqua;
+    flex:1;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    gap: 10px;
+    border-radius: 35px;
+}
+.rightContainer{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    text-align: center;
+}
+.taskAddition{
+    background-color: bisque;
+    width: 400px;
+    height: 355px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 15px;
+}
+.panel{
+    display: flex;
+    gap: 2px;
+    justify-content: space-around;
+}
+.taskCount{
+    background-color: blueviolet;
+    height: 355px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+    border: 5px solid black;
+    border-radius: 15px;
+}
