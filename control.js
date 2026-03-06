@@ -7,6 +7,7 @@ function add(){
             copy(arr[${i}]);
             arr.splice(${i},1);
             add();
+            showGif();
             ">Done</button></div>`;
         storage += eachline;
     }
@@ -29,4 +30,11 @@ function copy(arrcopy){
     deletedTask=`<div class="innerShow2"><div class="content2">${arrcopy.data}</div><div class="dueDate2">${arrcopy.date}</div><input class="checkbox" type="checkbox" checked></div>`
     document.querySelector('.taskDone').innerHTML+=deletedTask;
     return;
+}
+function showGif(){
+    const popup = document.getElementById("gifPopup");
+    popup.style.display = "flex";
+    setTimeout(() => {
+        popup.style.display = "none";
+    }, 2000); 
 }
