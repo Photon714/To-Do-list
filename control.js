@@ -1,4 +1,9 @@
 let arr =[];
+let saved= localStorage.getItem('cookies');
+if(saved){
+    arr=JSON.parse(saved);
+    add();
+}
 function add(){
     let storage='';
     for(let i=0;i<arr.length;i++){
@@ -6,6 +11,7 @@ function add(){
         let eachline = `<div class="innerShow"><div class="content">${item.data}</div><div class="dueDate">${item.date}</div><button class="deleteButton" onclick="
             copy(arr[${i}]);
             arr.splice(${i},1);
+            localStorage.setItem('cookies',JSON.stringify(arr));
             add();
             showGif();
             ">Done</button></div>`;
@@ -23,8 +29,9 @@ function takeinput(){
         date
     });
     dataElement.value='';
+    localStorage.setItem('cookies',JSON.stringify(arr));
     add();
-}
+}   
 let deletedTask='';
 function copy(arrcopy){
     deletedTask=`<div class="innerShow2"><div class="content2">${arrcopy.data}</div><div class="dueDate2">${arrcopy.date}</div><input class="checkbox" type="checkbox" checked></div>`
