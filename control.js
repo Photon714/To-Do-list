@@ -7,7 +7,7 @@ function add(){
             copy(arr[${i}]);
             arr.splice(${i},1);
             add();
-            ">Delete</button></div>`;
+            ">Done</button></div>`;
         storage += eachline;
     }
     document.querySelector('.show').innerHTML=storage;
@@ -26,7 +26,7 @@ function takeinput(){
 }
 let deletedTask='';
 function copy(arrcopy){
-    deletedTask=`<div class="innerShow2"><div class="content2">${arrcopy.data}</div><div class="dueDate2">${arrcopy.date}</div><input type="checkbox" checked></div>`
+    deletedTask=`<div class="innerShow2"><div class="content2">${arrcopy.data}</div><div class="dueDate2">${arrcopy.date}</div><input class="checkbox" type="checkbox" checked></div>`
     document.querySelector('.taskDone').innerHTML+=deletedTask;
     return;
 }
