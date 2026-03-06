@@ -92,6 +92,7 @@ body{
 button{
     height: 29px;
     width: 70px;
+    border: none;
     border-radius: 12px;
     background-color: #9929EA;
     color: white;
@@ -107,6 +108,7 @@ button:hover{
 .enterButton{
     height: 29px;
     width: 70px;
+    border: none;
     border-radius: 12px;
     background-color: #9929EA;
     color: white;
