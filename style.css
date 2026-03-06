@@ -183,3 +183,18 @@ hr{
     object-fit:cover;
     border-radius:20px;
 }
+@media (max-width: 768px){
+
+    .maincontainer{
+        flex-direction: column;
+    }
+
+    .todolist{
+        width: 100%;
+    }
+
+    .additionalpanel{
+        width: 100%;
+    }
+
+}
