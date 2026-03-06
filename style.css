@@ -9,6 +9,7 @@ body{
     justify-content: center;
     gap: 7px;
 }
+
 *{
     box-sizing:border-box;
 }
